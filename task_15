@@ -1,0 +1,6 @@
+In the Dashboard menu, click Dashboard > Actions > Add Action > Filter
+Source sheet: Bar Chart
+Target sheet: Map
+Run action on: Select
+Filter: Only related data (choose Neighbourhood Group)
+Test the action: When you click on a bar, the map updates
