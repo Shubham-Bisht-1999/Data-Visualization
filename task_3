@@ -1,0 +1,36 @@
+import pandas as pd
+
+data = {
+    'Room Type Description': [
+        'Entire apartment with amenities',
+        'Private bedroom in shared apartment',
+        'Shared space with multiple beds',
+        'Private room with ensuite bath',
+        'Entire house with garden',
+        'Shared bunk room'
+    ]
+}
+
+df = pd.DataFrame(data)
+
+def categorize_room_type(description):
+    desc = description.lower()
+    if 'entire' in desc:
+        return 'Entire Home/Apt'
+    elif 'private' in desc:
+        return 'Private Room'
+    elif 'shared' in desc:
+        return 'Shared Room'
+    else:
+        return 'Other'
+
+df['Room Category'] = df['Room Type Description'].apply(categorize_room_type)
+
+room_hierarchy = df.groupby('Room Category')['Room Type Description'].unique().to_dict()
+
+# Print the Room Type Hierarchy
+print("Room Type Hierarchy:\n")
+for category, descriptions in room_hierarchy.items():
+    print(f"{category}:")
+    for desc in descriptions:
+        print(f"  - {desc}")
