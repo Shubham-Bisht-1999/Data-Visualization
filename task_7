@@ -1,0 +1,5 @@
+MAP(
+  DETAIL = [Neighbourhood],
+  COLOR = [Neighbourhood Group],
+  LOCATION = [Latitude], [Longitude]
+)
