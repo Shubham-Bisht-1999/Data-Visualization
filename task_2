@@ -1,0 +1,14 @@
+import pandas as pd
+data = {
+    'Neighbourhood Group': ['Brooklyn', 'Brooklyn', 'Manhattan', 'Manhattan', 'Queens'],
+    'Neighbourhood': ['Williamsburg', 'Bushwick', 'Harlem', 'Upper East Side', 'Astoria']
+}
+
+df = pd.DataFrame(data)
+
+hierarchy = df.groupby('Neighbourhood Group')['Neighbourhood'].unique().to_dict()
+
+for group, neighbourhoods in hierarchy.items():
+    print(f"{group}:")
+    for neighbourhood in neighbourhoods:
+        print(f"  - {neighbourhood}")
