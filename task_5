@@ -1,0 +1,4 @@
+[Price] / [Minimum Nights]
+
+#error handling
+IF [Minimum Nights] != 0 THEN [Price] / [Minimum Nights] ELSE NULL END
