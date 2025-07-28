@@ -1,0 +1,6 @@
+In the Dashboard menu, click Dashboard > Actions > Add Action > Highlight
+Source: Bar Chart
+Target: Map (or All)
+Run action on: Hover or Select (your preference)
+Use field: Neighbourhood Group
+Confirm and test: When you hover/select a Neighbourhood Group in the bar chart, the map listings get highlighted
