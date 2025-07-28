@@ -1,0 +1,1 @@
+NOT ISNULL([price]) AND NOT ISNULL([occupancy_rate]) AND NOT ISNULL([minimum_nights])
