@@ -1,0 +1,3 @@
+Average Price per Night = [Price] / [Minimum Nights]
+In Tableau:
+[Price] / [Minimum Nights]
